@@ -7,11 +7,11 @@ if [[ "$#" -ne 2 || "${1}" == '-h' || "${1}" == '--help' ]]; then
 gcrgc.sh cleans up tagged or untagged images pushed before specified date
 for a given repository (an image name without a tag/digest).
 USAGE:
-  gcrgc.sh REPOSITORY DATE
+  cleangcr.sh REPOSITORY DATE
 EXAMPLE
-  gcrgc.sh gcr.io/ahmet/my-app 2017-04-01
-  would clean up everything under the gcr.io/ahmet/my-app repository
-  pushed before 2017-04-01.
+  cleangcr.sh gcr.io/test/my-app 2019-04-14
+  would clean up everything under the gcr.io/test/my-app repository
+  pushed before 2019-04-14.
 EOF
   exit 1
 elif [[ "${#2}" -ne 10 ]]; then
